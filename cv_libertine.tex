@@ -27,6 +27,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
 \setmonofont[Scale=0.8]{Monaco}
+\usepackage{marvosym}
 
 % ---- CUSTOM COMMANDS
 \chardef\&="E050
@@ -67,14 +68,18 @@
 % DOCUMENT
 \begin{document}
 {\LARGE Albert Einstein}\\[1cm]
+\begin{minipage}[t]{0.5\textwidth}
  Institute for Advanced Study\\
 Einstein Drive\\
 Princeton, N.J. \texttt{08540}
 U.S.A.\\[.2cm]
-Phone: \texttt{609-734-8000}\\
-Fax: \texttt{609-924-8399}\\[.2cm]
-email: \href{mailto:a.einstein@ias.edu}{a.einstein@ias.edu}\\
-\textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\ 
+\end{minipage}
+\begin{tabular}[t]{r|l}
+  \Telefon     & \texttt{609-734-8000}\\
+  \FAX         & \texttt{609-924-8399}\\
+  \Letter      & \href{mailto:a.einstein@ias.edu}{a.einstein@ias.edu}\\
+  \textsc{url} & \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\ 
+\end{tabular}
 \vfill
  Born:  March 12, 1879---Ulm, Germany\\
 Nationality:  German/American
