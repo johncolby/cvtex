@@ -57,6 +57,12 @@
 	pdfproducer={http://nitens.org/taraborelli/cvtex}
 ]{hyperref}  
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+\usepackage{bookmark} % Better bookmark support
+
+% Section headings have no numbers, but still generate bookmarks
+\makeatletter
+\renewcommand\@seccntformat[1]{}
+\makeatother
 
 % DOCUMENT
 \begin{document}
@@ -74,15 +80,15 @@ email: \href{mailto:a.einstein@ias.edu}{a.einstein@ias.edu}\\
 Nationality:  German/American
 
 %%\hrule
-\section*{Current position}
+\section{Current position}
 \emph{Emeritus Professor}, Institute for Advanced Study, Princeton
 
 %%\hrule
-\section*{Areas of specialization}
+\section{Areas of specialization}
  Physics • Relativity theory
 
 %%\hrule
-\section*{Appointments held}
+\section{Appointments held}
 \noindent
 \years{1903-1908}Swiss Patent Office, Bern\\
 \years{1908-1911}University of Bern\\
@@ -93,19 +99,19 @@ Nationality:  German/American
 \years{1932-1955}Institute for Advanced Study, Princeton
 
 %\hrule
-\section*{Education}
+\section{Education}
 \noindent
 \years{1900}\textsc{MSc} in Physics, ETH Zürich\\
 \years{1900}\textsc{PhD} in Physics, ETH Zürich
 
 %\hrule
-\section*{Grants, honors \& awards}
+\section{Grants, honors \& awards}
 \noindent
 \years{1921}Nobel Prize in Physics, Nobel Foundation
 
-\section*{Publications \& talks}
+\section{Publications \& talks}
 
-\subsection*{Journal articles}
+\subsection{Journal articles}
 \noindent
 \years{1901}Einstein, Albert (1901), “Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)", \emph{Annalen der Physik} 4: 513\\
 \years{1905a}Einstein, Albert (1905), “On a Heuristic Viewpoint Concerning the Production and Transformation of Light", \emph{Annalen der Physik} 17: 132–148.\\
@@ -117,21 +123,21 @@ Nationality:  German/American
 \years{1917a}Einstein, Albert (1917), “Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)", \emph{Koniglich Preussische Akademie der Wissenschaften}\\
 \years{1917b}Einstein, Albert (1917), “Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)", \emph{Physikalische Zeitschrift} 18: 121–128
 
-\subsection*{Books}
+\subsection{Books}
 \noindent
 \years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
 
-\subsection*{Newspaper articles}
+\subsection{Newspaper articles}
 \noindent
 \years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
 \years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
 
-\section*{Teaching}
+\section{Teaching}
 
 ...
 
 %\hrule
-\section*{Service to the profession}
+\section{Service to the profession}
 
 ...
 %\vspace{1cm}
